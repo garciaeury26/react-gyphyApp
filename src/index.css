@@ -1,0 +1,89 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding:60px;
+    background-color:#21222A;
+    color:white;
+}
+
+input{
+    color: grey;
+    width:100%;
+    font-size: 1.2rem;
+    transition: all 1s;;
+}
+
+input:hover{
+    color:goldenrod;
+}
+
+h1{
+    animation:transicion;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function:linear;
+}
+@keyframes transicion{
+    0%{
+        color:aqua;
+    }
+    50%{
+        color:rgb(0, 255, 149);
+    }
+    75%{
+        color:rgb(162, 0, 255);
+    }
+    100%{
+        color: aqua;
+    }
+}
+
+/* estilos a los gifs */
+
+.container-targeta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.targetas{
+    height:max-content;
+    width:172px;
+    align-content: center;
+    border: 1px solid grey;
+    border-radius:6px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    animation:animacion;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+
+}
+
+@keyframes animacion{
+    0%{
+        border:1px solid rgb(212, 18, 18);
+    }
+    50%{
+        border:1px solid rgb(13, 86, 170);
+    }
+    70%{
+        border:1px solid rgb(13, 170, 78);
+    }
+    100%{
+        border:1px solid rgb(212, 18, 18);
+    }
+}
+
+.targetas p{
+    padding:5px;
+    text-align:center;
+}
+
+.targetas img{
+    max-width: 170px;
+
+}
