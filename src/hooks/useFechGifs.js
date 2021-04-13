@@ -14,12 +14,10 @@ export const useFechGifs = (category) => {
 
         getGifs(category)
             .then(imgs => {
-                setTimeout(() => {
-                    setstate({
-                        data: imgs,  //recuerda aser lo en el mismo orden
-                        loading: false
-                    })
-                }, 2000)
+                setstate({
+                    data: imgs,  //recuerda aser lo en el mismo orden
+                    loading: false
+                })
             })
 
 
