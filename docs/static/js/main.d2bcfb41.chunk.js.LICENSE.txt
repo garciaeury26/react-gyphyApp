@@ -1,0 +1,1 @@
+//!usa el useEfect poeque si tengo useState que es un boton y esta ariba de la funcion me va a ejecutar la funcion getFifs cada vez que lo toque porque el el state esta arriba del todo
